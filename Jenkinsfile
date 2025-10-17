@@ -67,7 +67,7 @@ pipeline {
 
     post {
         success {
-            echo "✅ Deployment and tests successful!"
+            echo "✅ Deployment  successful!"
         }
         failure {
             echo "❌ Deployment or tests failed!"
