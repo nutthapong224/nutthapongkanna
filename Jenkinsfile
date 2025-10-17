@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "ghcr.io/nutthapong224/testbdi/hello-ci:latest"
+        IMAGE_NAME = "ghcr.io/nutthapong224/nutthapongkanna/hello-ci:latest"
         CONTAINER_NAME = "hello-ci-container"
     }
 
