@@ -17,6 +17,7 @@
 
 5. ดังในข้อกำหนด ข้อสอง มีการ install package ผ่าน requirements.txt แล้ว เมื่อเทสผ่าน แสดง สถานะ
 ✅ success
+![alt text](image.png)
 
 6. ในเคสที่เทสไม่ผ่านจะแสดง สถานะ ❌ failed” และ merge ไม่ได้ ไม่ได้ ดังภาพ
 
