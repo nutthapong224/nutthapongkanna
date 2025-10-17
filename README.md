@@ -151,7 +151,7 @@ pytest -v
 2.  **ตั้งค่า Webhook ใน GitHub**:
     *   ไปที่ `Settings` > `Webhooks` > `Add webhook`.
     *   ตั้งค่า `Payload URL` เป็น `http://<your-jenkins-ip>:8080/github-webhook/`.
-    *   เลือก `Content type` เป็น `application/json`.
+    *   เลือก `Content type` เป็น `application/x-www-form-urlencoded`.
     *   เลือก `Just the push event`.
     ![Add Webhook](image-12.png)
     ![Webhook Config](image-13.png)
