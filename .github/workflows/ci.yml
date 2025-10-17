@@ -1,0 +1,55 @@
+name: PR Test (CI)
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  run-tests:
+    name: Run Unit Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧾 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 📢 แสดงรายละเอียดขั้นตอน
+        run: |
+          echo "=============================================="
+          echo "🚀 เริ่มกระบวนการตรวจสอบ Pull Request (PR)"
+          echo "ระบบทำงานอัตโนมัติ:"
+          echo "1. ติดตั้ง dependency (pip install -r requirements.txt)"
+          echo "2. รัน unit tests"
+          echo "3. ตรวจสอบว่า test ผ่านทั้งหมด"
+          echo "4. แสดงผล “Passed” หรือ “Failed” ในหน้า PR"
+          echo ""
+          echo "🎯 ผลลัพธ์ที่คาดหวัง:"
+          echo "• เมื่อเปิด PR → ระบบรันทันที"
+          echo "• ถ้า test ผ่าน → แสดงสถานะ ✅ Passed"
+          echo "• ถ้า test ล้มเหลว → แสดงสถานะ ❌ Failed และ merge ไม่ได้"
+          echo "=============================================="
+
+      - name: 🐍 Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 📦 Install dependencies
+        run: |
+          echo "🔧 กำลังติดตั้ง dependencies..."
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 🧪 Run unit tests with pytest
+        run: |
+          echo "🧪 เริ่มรันทดสอบ..."
+          echo "----------------------------------------"
+
+          if pytest -v; then
+            echo ""
+            echo "✅ success"
+          else
+            echo ""
+            echo "❌ failed” และ merge ไม่ได้"
+            exit 1
+          fi
