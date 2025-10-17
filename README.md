@@ -3,3 +3,19 @@
 ![alt text](image.png)
 
 1.การทำงานใส่ส่วนของ ci  อย่างแรกของ โจทย์ข้อ 2  นั้นต้องมีการ setup เพื่อให้ github action ดังภาพ 
+![alt text](image-1.png)
+
+2.
+
+![alt text](image-2.png)
+
+3.
+![alt text](image-3.png)
+
+4.
+![alt text](image-4.png)
+
+5. ดังในข้อกำหนด ข้อสอง มีการ install package ผ่าน requirements.txt แล้ว เมื่อเทสผ่าน แสดง สถานะ
+✅ success
+
+6. ในเคสที่เทสไม่ผ่านจะแสดง สถานะ failed” และ merge ไม่ได้ ดังภาพ
