@@ -18,4 +18,8 @@
 5. ดังในข้อกำหนด ข้อสอง มีการ install package ผ่าน requirements.txt แล้ว เมื่อเทสผ่าน แสดง สถานะ
 ✅ success
 
-6. ในเคสที่เทสไม่ผ่านจะแสดง สถานะ failed” และ merge ไม่ได้ ดังภาพ
+6. ในเคสที่เทสไม่ผ่านจะแสดง สถานะ ❌ failed” และ merge ไม่ได้ ไม่ได้ ดังภาพ
+
+![alt text](image-5.png)
+ส่วน แสดงผล “ Passed” ในหน้ํา PR/MR ไม่สามารถทำได้ใน github action ไม่สามารถแก้ข้อความที่ขึ้น  fail หรือ success ได้ เพราะมีคำ defualt ของ github action
+
