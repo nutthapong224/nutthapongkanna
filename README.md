@@ -178,3 +178,5 @@ pytest -v
         4.  เมื่อ deploy สำเร็จ, จะแสดงข้อความ "Deployment success ✅".
             ![Deployment Success](image-19.png)
             ![Final Stage](image-24.png)
+
+test
